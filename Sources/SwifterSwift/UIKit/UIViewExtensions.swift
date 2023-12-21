@@ -99,16 +99,6 @@ public extension UIView {
         }
     }
 
-    /// SwifterSwift: Height of view.
-    var height: CGFloat {
-        get {
-            return frame.size.height
-        }
-        set {
-            frame.size.height = newValue
-        }
-    }
-
     /// SwifterSwift: Check if view is in RTL format.
     var isRightToLeft: Bool {
         if #available(iOS 10.0, *, tvOS 10.0, *) {
@@ -170,17 +160,6 @@ public extension UIView {
         }
     }
 
-    /// SwifterSwift: Size of view.
-    var size: CGSize {
-        get {
-            return frame.size
-        }
-        set {
-            width = newValue.width
-            height = newValue.height
-        }
-    }
-
     /// SwifterSwift: Get view's parent view controller
     var parentViewController: UIViewController? {
         weak var parentResponder: UIResponder? = self
@@ -191,38 +170,6 @@ public extension UIView {
             }
         }
         return nil
-    }
-
-    /// SwifterSwift: Width of view.
-    var width: CGFloat {
-        get {
-            return frame.size.width
-        }
-        set {
-            frame.size.width = newValue
-        }
-    }
-
-    /// SwifterSwift: x origin of view.
-    // swiftlint:disable:next identifier_name
-    var x: CGFloat {
-        get {
-            return frame.origin.x
-        }
-        set {
-            frame.origin.x = newValue
-        }
-    }
-
-    /// SwifterSwift: y origin of view.
-    // swiftlint:disable:next identifier_name
-    var y: CGFloat {
-        get {
-            return frame.origin.y
-        }
-        set {
-            frame.origin.y = newValue
-        }
     }
 
 }
